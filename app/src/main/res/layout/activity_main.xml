@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:progress="100" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_time_run"
+        android:layout_alignLeft="@id/progressBar"
+        android:layout_above="@id/progressBar"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_time_duration"
+        android:layout_alignRight="@id/progressBar"
+        android:layout_above="@id/progressBar"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play_arrow_white_48dp" />
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/button_play"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/button_play"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_skip_next_white_48dp" />
+
+    <ImageButton
+        android:id="@+id/button_previous"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@id/button_play"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@id/button_play"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_skip_previous_white_48dp" />
+
+</RelativeLayout>
